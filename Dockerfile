@@ -14,4 +14,4 @@ RUN pip install --use-pep517 -r requirements.txt
 EXPOSE 29500
 
 # Run your Gradio application (adjust the port as needed)
-CMD ["python", "app.py", "--use_gradio", "--use_opencv", "--use_tensorrt", "--port", "29500"]
+CMD python -m gradio config.py --port 29500
