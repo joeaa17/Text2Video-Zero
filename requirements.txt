@@ -35,4 +35,3 @@ safetensors
 beautifulsoup4
 bs4
 tomesd
-gr
