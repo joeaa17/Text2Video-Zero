@@ -8,7 +8,6 @@ COPY . /app
 WORKDIR /app
 
 # Install dependencies from requirements.txt
-RUN source venv/bin/activate
 RUN pip install --use-pep517 -r requirements.txt
 
 # Expose the port that your Gradio application listens on (8000 in this example)
