@@ -3,4 +3,4 @@ COPY . /app
 WORKDIR /app
 RUN pip install --use-pep517 -r requirements.txt
 EXPOSE 5000
-CMD python /app/app.py
+CMD python3.7 /app/app.py
