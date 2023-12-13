@@ -10,8 +10,8 @@ WORKDIR /app
 # Install dependencies from requirements.txt
 RUN pip install --use-pep517 -r requirements.txt
 
-# Expose the port that your application listens on (adjust if necessary)
+# Expose the port that your Gradio application listens on (8000 in this example)
 EXPOSE 7860
 
-# Run your application (assuming it's in app.py)
-CMD python app.py
+# Run your Gradio application (adjust the port as needed)
+CMD ["python", "app.py", "--use_gradio", "--use_opencv", "--use_tensorrt", "--port", "7860"]
