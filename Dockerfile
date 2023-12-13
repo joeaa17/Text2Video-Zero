@@ -8,10 +8,12 @@ COPY . /app
 WORKDIR /app
 
 # Install dependencies from requirements.txt
+RUN virtualenv --system-site-packages -p python3.9 venv
+RUN source venv/bin/activate
 RUN pip install --use-pep517 -r requirements.txt
 
 # Expose the port that your Gradio application listens on (8000 in this example)
-EXPOSE 7860
+EXPOSE 29500
 
 # Run your Gradio application (adjust the port as needed)
-CMD ["python", "app.py", "--use_gradio", "--use_opencv", "--use_tensorrt", "--port", "7860"]
+CMD ["python", "app.py", "--use_gradio", "--use_opencv", "--use_tensorrt", "--port", "29500"]
