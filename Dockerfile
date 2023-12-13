@@ -1,4 +1,4 @@
-FROM python
+FROM python:3.7
 COPY . /app
 WORKDIR /app
 RUN pip install --use-pep517 --upgrade pip
