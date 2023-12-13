@@ -1,3 +1,4 @@
+gradio
 accelerate
 addict
 albumentations
