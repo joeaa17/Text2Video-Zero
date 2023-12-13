@@ -8,7 +8,6 @@ COPY . /app
 WORKDIR /app
 
 # Install dependencies from requirements.txt
-RUN virtualenv --system-site-packages -p python3.9 venv
 RUN source venv/bin/activate
 RUN pip install --use-pep517 -r requirements.txt
 
