@@ -1,5 +1,5 @@
 # Use the Python 3.7 base image
-FROM python:3.7
+FROM python:3.9
 
 # Copy the contents of the current directory to the /app directory in the image
 COPY . /app
